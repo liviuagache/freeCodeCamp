@@ -1,7 +1,7 @@
 :root {
     --main-red: #be3144;
     --main-blue: #304f9d;
-    --main-grey: #303841;
+    --main-gray: #303841;
 }
 * {
     margin: 0;
@@ -13,6 +13,7 @@
 }
 html {
     box-sizing: border-box;
+    font-size: 62.5%;
     scroll-behavior: smooth;
 }
 /* 1200px / 16px = 75em */
@@ -48,6 +49,7 @@ h2 {
 }
 a {
     text-decoration: none;
+    color: inherit;
 }
 img {
     display: block;
@@ -86,11 +88,8 @@ img {
     color: white;
     transition: .5s ease;
 }
-.navlist a:link {
-    color: white;
-}
 .navlist a:hover {
-    background-color: var(--main-grey);
+    background-color: var(--main-gray);
     color: var(--main-red);
     text-shadow: 0 0 5px black;
 }
@@ -127,13 +126,13 @@ img {
       font-size: 4rem;
     }
 }
-.projects-header a:link {
+.projects-header a {
     color: var(--main-red);
     text-shadow: 0 0 5px black;
     transition: .5s ease;
 }
 .projects-header a:hover {
-    color: var(--main-grey);
+    color: var(--main-gray);
     text-shadow: 0 0 5px white;
 }
 .projects-grid {
@@ -155,16 +154,16 @@ img {
     }
 }
 .project-item {
-    background: var(--main-grey);
+    background: var(--main-gray);
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     border-radius: 2px;
 }
 .code {
-    color: var(--main-grey);
+    color: var(--main-gray);
     transition: .5s ease;
 }
-.project-item:hover code {
-    color: white;
+.project-item:hover .code {
+    color: var(--main-red);
 }
 .progect-img {
     height: calc(100% - 6.8rem);
@@ -174,4 +173,67 @@ img {
 .project-title {
     font-size: 2rem;
     padding: 2rem 0.5rem;
+    color: white;
+}
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+    font-size: 2rem;
+    background: var(--main-gray);
+    transition: .5s ease;
+}
+.btn:hover {
+    background: var(--main-red);
+}
+.btn:hover i {
+    transform: translateX(2px);
+}
+.btn i {
+    margin-left: 10px;
+    transform: translateX(0);
+    transition: .5s ease;
+}
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+    background: var(--main-gray);
+}
+.contact-header > h2 {
+    font-size: 6rem;
+}
+  
+@media (max-width: 28.75em) {
+    .contact-header > h2 {
+      font-size: 4rem;
+    }
+}
+  
+.contact-header > p {
+    font-style: italic;
+}
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+.btn-contact {
+    font-size: 2.4rem;
+    text-shadow: 2px 2px 1px black;
+    transition: .5s ease;
+}
+.btn-contact:hover {
+    transform: translateY(8px);
+}
+.contact-links i {
+    padding-left: 15px;
 }
