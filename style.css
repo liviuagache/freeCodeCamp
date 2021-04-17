@@ -35,7 +35,7 @@ header {
     color: cornflowerblue;
     position: fixed;
     text-decoration: none;
-    transition: font-size 0.2s ease;
+    transition: font-size .5s ease;
 }
 #linklist ul :hover {
     font-size: x-large;
