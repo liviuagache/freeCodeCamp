@@ -22,7 +22,7 @@ header {
 #linkList {
     display: flex;
     justify-content: center;
-    margin-left: -150px;
+    margin-left: -200px;
 }
 #linklist ul {
     position: fixed;
