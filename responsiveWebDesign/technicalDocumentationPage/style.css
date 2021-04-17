@@ -55,7 +55,7 @@ code {
     display: block;
     text-align: center;
     position: relative;
-    background-color: rgb(215, 215, 215);
+    background-color: rgb(215, 215, 215) solid;
     padding: 15px;
     margin: 10px;
     border-radius: 10px;
