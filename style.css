@@ -37,6 +37,6 @@ header {
     text-decoration: none;
     transition: font-size .5s ease;
 }
-#linklist ul:hover {
+#linklist a:hover {
     font-size: x-large;
 }
