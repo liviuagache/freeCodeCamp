@@ -2,7 +2,7 @@ html,
 body {
     min-width: 290px;
     color: black;
-    background-color: #ffebcd80;
+    background-color: rgb(230, 230, 230);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5;
 }
@@ -13,7 +13,7 @@ body {
     left: 0px;
     width: 300px;
     height: 100%;
-    border-right: gold solid;
+    border-right: rgb(130, 130, 130);
 }
 header {
     color: black;
@@ -55,7 +55,7 @@ code {
     display: block;
     text-align: center;
     position: relative;
-    background-color: honeydew;
+    background-color: rgb(215, 215, 215);
     padding: 15px;
     margin: 10px;
     border-radius: 10px;

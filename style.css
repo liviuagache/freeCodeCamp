@@ -1,11 +1,11 @@
 body {
     color: black;
-    background-color: burlywood;
+    background-color: rgb(230, 230, 230);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #linkList {
-    position: absolute;
     top: 15px;
     display: block;
-    align-items: center;
+    margin: auto;
+    
 }
