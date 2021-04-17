@@ -114,13 +114,64 @@ img {
     padding: 10rem 2rem;
     background-color: var(--main-blue);
     font-size: 1.5rem;
+    color: white;
 }
-#projects a:link {
+.projects-header {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid white;
+    padding: 2rem;
+}
+@media (max-width: 28.75em) {
+    .projects-header {
+      font-size: 4rem;
+    }
+}
+.projects-header a:link {
     color: var(--main-red);
     text-shadow: 0 0 5px black;
     transition: .5s ease;
 }
-#projects a:hover {
+.projects-header a:hover {
     color: var(--main-grey);
     text-shadow: 0 0 5px white;
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+@media (max-width: 30.625em) {
+    #projects {
+      padding: 6rem 1rem;
+    }
+  
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+}
+.project-item {
+    background: var(--main-grey);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+}
+.code {
+    color: var(--main-grey);
+    transition: .5s ease;
+}
+.project-item:hover code {
+    color: white;
+}
+.progect-img {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+.project-title {
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
 }
