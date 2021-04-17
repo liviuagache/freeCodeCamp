@@ -1,0 +1,128 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<main class="container">
+
+    <head class="header">
+        <h1 id="title">
+            Covid-19 Test
+        </h1>
+        <p id="description">
+            Check if you are infected with Sars-Cov-2 virus.
+        </p>
+    </head>
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" id="name" class="form-field" placeholder="Ex: &quot;John Smith&quot;" required />
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" id="email" class="form-field" placeholder="&quot;example@example.email&quot;"
+                required />
+        </div>
+        <div class="form-group">
+            <label id="number-label" for="number">Age</label>
+            <input type="number" id="number" min="10" max="99" class="form-field" placeholder="Ex: &quot;32&quot;" />
+        </div>
+        <div class="form-group">
+            <p>What is your current role?</p>
+            <select id="dropdown" name="role" class="form-field" required>
+                <option disabled selected value>Select current role</option>
+                <option value="student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="partJob">Part Time Job</option>
+                <option value="preferNo">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Have you been exposed to Covid-19 in the last 7 days?</p>
+            <label>
+                <input name="user-respond" value="yes" type="radio" class="input-radio" checked />Yes</label>
+            <label>
+                <input name="user-respond" value="no" type="radio" class="input-radio" />No</label>
+
+            <label><input name="user-respond" value="not-sure" type="radio" class="input-radio" />Not sure</label>
+        </div>
+        <div class="form-group">
+            <p>
+                What is your health condition?
+            </p>
+            <select id="most-like" name="mostLike" class="form-field" required>
+                <option disabled selected value>Select an option</option>
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="meh">Meh</option>
+                <option value="bad">Bad</option>
+                <option value="dead">Dead</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Do you have any of the following symptoms? <span class="clue">(Check all that apply)</span></p>
+            <p><u>Most common symptoms:</u></p>
+            <label>
+                <input name="prefer" value="fever" type="checkbox" class="input-checkbox" />fever
+            </label>
+            <label>
+                <input name="prefer" value="dry-cough" type="checkbox" class="input-checkbox" />dry cough
+            </label>
+            <label>
+                <input name="prefer" value="tiredness" type="checkbox" class="input-checkbox" />tiredness
+            </label>
+            <p><u>Less common symptoms:</u></p>
+            <label>
+                <input name="prefer" value="aches-and-pains" type="checkbox" class="input-checkbox" />aches and pains
+            </label>
+            <label>
+                <input name="prefer" value="sore-throat" type="checkbox" class="input-checkbox" />sore throat
+            </label>
+            <label>
+                <input name="prefer" value="diarrhoea" type="checkbox" class="input-checkbox" />diarrhoea
+            </label>
+            <label>
+                <input name="prefer" value="conjunctivitis" type="checkbox" class="input-checkbox" />conjunctivitis
+            </label>
+            <label>
+                <input name="prefer" value="headache" type="checkbox" class="input-checkbox" />headache
+            </label>
+            <label>
+                <input name="prefer" value="loss-of-taste-or-smell" type="checkbox" class="input-checkbox" />loss of
+                taste or smell
+            </label>
+            <label>
+                <input name="prefer" value="rash-on-skin" type="checkbox" class="input-checkbox" />a rash on skin, or
+                discolouration of fingers or toes
+            </label>
+            <p><u>Serious symptoms:</u></p>
+            <label>
+                <input name="prefer" value="difficulty-breathing" type="checkbox" class="input-checkbox" />difficulty
+                breathing or shortness of breath
+            </label>
+            <label>
+                <input name="prefer" value="chest-pain" type="checkbox" class="input-checkbox" />chest pain or pressure
+            </label>
+            <label>
+                <input name="prefer" value="loss-of-speech" type="checkbox" class="input-checkbox" />loss of speech or
+                movement
+            </label>
+        </div>
+        <div class="form-group">
+            <p>Any other informations?</p>
+            <textarea id="comments" class="input-textarea" name="comment"
+                placeholder="Enter your comment here..."></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+                Test
+            </button>
+        </div>
+    </form>
+</main>

@@ -1,0 +1,187 @@
+html,
+body {
+    min-width: 290px;
+    color: black;
+    background-color: #ffebcd80;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+}
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: gold solid;
+}
+header {
+    color: black;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: lighter;
+}
+#main-doc header {
+    text-align: left;
+    margin: 0px;   
+}
+#navbar ul {
+    height: 88%;
+    padding: 0px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#navbar li {
+    color: darkslategrey;
+    border-top: dimgrey 1px solid;
+    position: relative;
+    width: 100%;
+}
+#navbar a {
+    display: block;
+    padding: 10px 30px;
+    color: dimgrey;
+    text-decoration: none;
+    cursor: pointer;
+}
+#main-doc {
+    position: absolute;
+    margin-left: 305px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+code {
+    display: block;
+    text-align: center;
+    position: relative;
+    background-color: honeydew;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+}
+  /* #### Mobile Phones Portrait #### */
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+  #video{
+    width: 450px;
+  }
+  .nav-link{
+    width:100%;
+    margin:auto;
+  }
+  .text{
+    width:450px;
+  }
+  .flex-container{
+    flex-direction:column;
+    margin:auto;
+  }
+}
+
+/* #### Mobile Phones Landscape #### */
+@media screen and (max-device-width: 640px) and (orientation: landscape){
+  #video{
+    width: 600px;
+  }
+  .nav-link{
+    width:100%;
+    margin:auto;
+  }
+  .text{
+    width:600px;
+  }
+  .flex-container{
+    flex-direction:column;
+    margin:auto;
+  }
+}
+
+/* #### Mobile Phones Portrait or Landscape #### */
+@media screen and (max-device-width: 640px){
+  #video{
+    width: 600px;
+  }
+  .nav-link{
+    width:100%;
+    margin:auto;
+  }
+  .text{
+    width:600px;
+  }
+  .flex-container{
+    flex-direction:column;
+    margin:auto;
+  }
+}
+
+/* #### iPhone 4+ Portrait or Landscape #### */
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
+  #video{
+    width: 300px;
+  }
+  .nav-link{
+    width:100%;
+    margin:auto;
+  }
+  .text{
+    width:300px;
+  }
+  .flex-container{
+    flex-direction:column;
+    margin:auto;
+  }
+}
+
+/* #### iPhone 5 Portrait or Landscape #### */
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
+  #video{
+    width: 550px;
+  }
+  .nav-link{
+    width:100%;
+    margin:auto;
+  }
+  .text{
+    width:550px;
+  }
+  .flex-container{
+    flex-direction:column;
+    margin:auto;
+  }
+}
+
+/* #### iPhone 6 and 6 plus Portrait or Landscape #### */
+@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3){
+  #video{
+    width: 650px;
+  }
+  .nav-link{
+    width:100%;
+    margin:auto;
+  }
+  .text{
+    width:650px;
+  }
+  .flex-container{
+    flex-direction:column;
+    margin:auto;
+  }
+}
+
+/* #### Tablets Portrait or Landscape #### */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+  #video{
+    width: 750px;
+  }
+  .nav-link{
+    width:100%;
+    margin:auto;
+  }
+  .text{
+    width:750px;
+  }
+  .flex-container{
+    flex-direction:column;
+    margin:auto;
+  }
+}

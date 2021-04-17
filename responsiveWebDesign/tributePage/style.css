@@ -1,0 +1,46 @@
+main {
+    font-family: 'Trebuchet MS', sans-serif;
+  }
+  
+  #title {
+    background: linear-gradient(90deg, white, #987, #987, white);
+    text-align: center;
+    font-size:500%;
+    margin-bottom: 0px;
+  }
+  
+  #description {
+    background: linear-gradient(90deg, white, white, #987, #987, white, white);
+    text-align: center;
+    font-size: 150%;
+    margin-top: 0px;
+  }
+  
+  #image {
+    background: linear-gradient(90deg, white, black, black, black, white);
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #img-caption {
+    background: linear-gradient(90deg, white, black, black, black, white);
+    text-align: center;
+  }
+  
+  #img-div {
+  
+    padding: 10px;
+    margin: 0;
+    color: white;
+  }
+  
+  h2 {
+    background: linear-gradient(90deg, black, white, white, white);
+    color: white
+  }
+  
+  #socialMedia-link {
+    background: linear-gradient(90deg, #987, white, white, white);
+  }
