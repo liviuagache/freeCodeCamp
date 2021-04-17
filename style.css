@@ -1,11 +1,42 @@
+:root {
+    --main-white:  #fafefe;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+}
 body {
-    color: black;
-    background-color: rgb(230, 230, 230);
+    color: var(--main-white);
+    background-color: black;
+    background-image: linear-gradient(0deg, #3a3d40 0%, #181719 100%);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+}
+header {
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-decoration-line: underline;
+    text-decoration-color: var(--main-red);
 }
 #linkList {
-    top: 15px;
-    display: block;
-    margin: auto;
-    
+    display: flex;
+    justify-content: center;
+    margin-left: -150px;
+}
+#linklist ul {
+    position: fixed;
+    line-height: 2em;
+}
+#linklist li {
+    background-color: bisque;
+}
+#linklist a {
+    color: cornflowerblue;
+    position: fixed;
+    text-decoration: none;
+    transition: font-size 0.2s ease;
+}
+#linklist ul :hover {
+    font-size: x-large;
 }
