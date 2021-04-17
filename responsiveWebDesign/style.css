@@ -1,0 +1,10 @@
+body {
+    color: black;
+    background-color: burlywood;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#linkList {
+    position: absolute;
+    top: 15px;
+    
+}
