@@ -28,7 +28,10 @@ header {
     text-decoration-color: var(--main-red);
 }
 .navbar {
+    display: flex;
     text-align: center;
+    align-items: center;
+    margin-top: 5vh;
 }
 .linklist {
     list-style: none;
