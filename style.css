@@ -13,6 +13,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     font-size: 5vh;
     color: var(--main-white);
     background-color: black;
@@ -32,15 +33,18 @@ header {
     text-align: center;
     align-items: center;
     margin-top: 5vh;
+    margin: auto;
 }
 .linklist {
     list-style: none;
+    text-align: center;
     width: 100%;
 }
 .linklist a {
     color: cornflowerblue;
     font-size: 2vh;
     text-decoration: none;
+    text-align: center;
     transition: .5s ease;
 }
 .linklist a:hover {
